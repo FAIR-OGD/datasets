@@ -1,0 +1,663 @@
+@prefix schema: <http://schema.org/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dsg: <http://civiclab.or.tz/togd/dataset/geodata/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+<http://civiclab.or.tz/togd/dataset/geodata/Dar+es+Salaam> a schema:Place ;
+	geo:lat "-6.83522" ;
+	geo:long "39.19597" ;
+	geo:lat_long "-6.83522, 39.19597" ;
+	rdfs:label "Dar es Salaam" ;
+	owl:sameAs dbr:Dar_es_Salaam ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Kilimanjaro a schema:Place ;
+	geo:lat "-3.75" ;
+	geo:long "37.75" ;
+	geo:lat_long "-3.75, 37.75" ;
+	rdfs:label "Kilimanjaro" ;
+	owl:sameAs dbr:Category:Kilimanjaro_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Iringa a schema:Place ;
+	geo:lat "-7.85" ;
+	geo:long "35.55" ;
+	geo:lat_long "-7.85, 35.55" ;
+	rdfs:label "Iringa" ;
+	owl:sameAs dbr:Iringa_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Njombe a schema:Place ;
+	geo:lat "-9.36762" ;
+	geo:long "34.90015" ;
+	geo:lat_long "-9.36762, 34.90015" ;
+	rdfs:label "Njombe" ;
+	owl:sameAs dbr:Njombe_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Arusha a schema:Place ;
+	geo:lat "-3" ;
+	geo:long "36" ;
+	geo:lat_long "-3.0, 36.0" ;
+	rdfs:label "Arusha" ;
+	owl:sameAs dbr:Arusha ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Kagera a schema:Place ;
+	geo:lat "-1.9" ;
+	geo:long "31.45" ;
+	geo:lat_long "-1.9, 31.45" ;
+	rdfs:label "Kagera" ;
+	owl:sameAs dbr:Kagera_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Tanga a schema:Place ;
+	geo:lat "-5" ;
+	geo:long "38.25" ;
+	geo:lat_long "-5.0, 38.25" ;
+	rdfs:label "Tanga" ;
+	owl:sameAs dbr:Tanga_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Mwanza a schema:Place ;
+	geo:lat "-2.56667" ;
+	geo:long "32.9" ;
+	geo:lat_long "-2.56667, 32.9" ;
+	rdfs:label "Mwanza" ;
+	owl:sameAs dbr:Mwanza ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Geita a schema:Place ;
+	geo:lat "-3.2" ;
+	geo:long "31.9" ;
+	geo:lat_long "-3.2, 31.9" ;
+	rdfs:label "Geita" ;
+	owl:sameAs dbr:Geita_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Pwani a schema:Place ;
+	geo:lat "-7" ;
+	geo:long "39" ;
+	geo:lat_long "-7.0, 39.0" ;
+	rdfs:label "Pwani" ;
+	owl:sameAs dbr:Pwani_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Mbeya a schema:Place ;
+	geo:lat "-8.2" ;
+	geo:long "33.33333" ;
+	geo:lat_long "-8.2, 33.33333" ;
+	rdfs:label "Mbeya" ;
+	owl:sameAs dbr:Mbeya ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Morogoro a schema:Place ;
+	geo:lat "-8" ;
+	geo:long "37" ;
+	geo:lat_long "-8.0, 37.0" ;
+	rdfs:label "Morogoro" ;
+	owl:sameAs dbr:Morogoro ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Katavi a schema:Place ;
+	geo:lat "-6.4" ;
+	geo:long "31.33333" ;
+	geo:lat_long "-6.4, 31.33333" ;
+	rdfs:label "Katavi" ;
+	owl:sameAs dbr:Katavi_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Shinyanga a schema:Place ;
+	geo:lat "-3.75" ;
+	geo:long "33" ;
+	geo:lat_long "-3.75, 33.0" ;
+	rdfs:label "Shinyanga" ;
+	owl:sameAs dbr:Shinyanga ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Ruvuma a schema:Place ;
+	geo:lat "-11" ;
+	geo:long "36" ;
+	geo:lat_long "-11.0, 36.0" ;
+	rdfs:label "Ruvuma" ;
+	owl:sameAs dbr:Ruvuma_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Rukwa a schema:Place ;
+	geo:lat "-7.9" ;
+	geo:long "31.33333" ;
+	geo:lat_long "-7.9, 31.33333" ;
+	rdfs:label "Rukwa" ;
+	owl:sameAs dbr:Rukwa_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Mara a schema:Place ;
+	geo:lat "-1.75" ;
+	geo:long "34" ;
+	geo:lat_long "-1.75, 34.0" ;
+	rdfs:label "Mara" ;
+	owl:sameAs dbr:Mara_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Singida a schema:Place ;
+	geo:lat "-5.5" ;
+	geo:long "34.5" ;
+	geo:lat_long "-5.5, 34.5" ;
+	rdfs:label "Singida" ;
+	owl:sameAs dbr:Singida_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Dodoma a schema:Place ;
+	geo:lat "-6" ;
+	geo:long "36" ;
+	geo:lat_long "-6.0, 36.0" ;
+	rdfs:label "Dodoma" ;
+	owl:sameAs dbr:Dodoma ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Lindi a schema:Place ;
+	geo:lat "-9.5" ;
+	geo:long "38.5" ;
+	geo:lat_long "-9.5, 38.5" ;
+	rdfs:label "Lindi" ;
+	owl:sameAs dbr:Lindi ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Kigoma a schema:Place ;
+	geo:lat "-4.75" ;
+	geo:long "30.5" ;
+	geo:lat_long "-4.75, 30.5" ;
+	rdfs:label "Kigoma" ;
+	owl:sameAs dbr:Category:Kigoma_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Manyara a schema:Place ;
+	geo:lat "-4.75" ;
+	geo:long "36.66667" ;
+	geo:lat_long "-4.75, 36.66667" ;
+	rdfs:label "Manyara" ;
+	owl:sameAs dbr:Manyara_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Mtwara a schema:Place ;
+	geo:lat "-10.66667" ;
+	geo:long "39" ;
+	geo:lat_long "-10.66667, 39.0" ;
+	rdfs:label "Mtwara" ;
+	owl:sameAs dbr:Mtwara ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Tabora a schema:Place ;
+	geo:lat "-5.5" ;
+	geo:long "32.83333" ;
+	geo:lat_long "-5.5, 32.83333" ;
+	rdfs:label "Tabora" ;
+	owl:sameAs dbr:Tabora_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Simiyu a schema:Place ;
+	geo:lat "-2.95" ;
+	geo:long "34.2" ;
+	geo:lat_long "-2.95, 34.2" ;
+	rdfs:label "Simiyu" ;
+	owl:sameAs dbr:Category:Simiyu_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+<http://civiclab.or.tz/togd/dataset/geodata/Dar+es+Salaam> a schema:Place ;
+	geo:lat "-6.83522" ;
+	geo:long "39.19597" ;
+	geo:lat_long "-6.83522, 39.19597" ;
+	rdfs:label "Dar es Salaam" ;
+	owl:sameAs dbr:Dar_es_Salaam ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Kilimanjaro a schema:Place ;
+	geo:lat "-3.75" ;
+	geo:long "37.75" ;
+	geo:lat_long "-3.75, 37.75" ;
+	rdfs:label "Kilimanjaro" ;
+	owl:sameAs dbr:Category:Kilimanjaro_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Iringa a schema:Place ;
+	geo:lat "-7.85" ;
+	geo:long "35.55" ;
+	geo:lat_long "-7.85, 35.55" ;
+	rdfs:label "Iringa" ;
+	owl:sameAs dbr:Iringa_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Njombe a schema:Place ;
+	geo:lat "-9.36762" ;
+	geo:long "34.90015" ;
+	geo:lat_long "-9.36762, 34.90015" ;
+	rdfs:label "Njombe" ;
+	owl:sameAs dbr:Njombe_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Arusha a schema:Place ;
+	geo:lat "-3" ;
+	geo:long "36" ;
+	geo:lat_long "-3.0, 36.0" ;
+	rdfs:label "Arusha" ;
+	owl:sameAs dbr:Arusha ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Kagera a schema:Place ;
+	geo:lat "-1.9" ;
+	geo:long "31.45" ;
+	geo:lat_long "-1.9, 31.45" ;
+	rdfs:label "Kagera" ;
+	owl:sameAs dbr:Kagera_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Tanga a schema:Place ;
+	geo:lat "-5" ;
+	geo:long "38.25" ;
+	geo:lat_long "-5.0, 38.25" ;
+	rdfs:label "Tanga" ;
+	owl:sameAs dbr:Tanga_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Mwanza a schema:Place ;
+	geo:lat "-2.56667" ;
+	geo:long "32.9" ;
+	geo:lat_long "-2.56667, 32.9" ;
+	rdfs:label "Mwanza" ;
+	owl:sameAs dbr:Mwanza ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Geita a schema:Place ;
+	geo:lat "-3.2" ;
+	geo:long "31.9" ;
+	geo:lat_long "-3.2, 31.9" ;
+	rdfs:label "Geita" ;
+	owl:sameAs dbr:Geita_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Pwani a schema:Place ;
+	geo:lat "-7" ;
+	geo:long "39" ;
+	geo:lat_long "-7.0, 39.0" ;
+	rdfs:label "Pwani" ;
+	owl:sameAs dbr:Pwani_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Mbeya a schema:Place ;
+	geo:lat "-8.2" ;
+	geo:long "33.33333" ;
+	geo:lat_long "-8.2, 33.33333" ;
+	rdfs:label "Mbeya" ;
+	owl:sameAs dbr:Mbeya ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Morogoro a schema:Place ;
+	geo:lat "-8" ;
+	geo:long "37" ;
+	geo:lat_long "-8.0, 37.0" ;
+	rdfs:label "Morogoro" ;
+	owl:sameAs dbr:Morogoro ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Katavi a schema:Place ;
+	geo:lat "-6.4" ;
+	geo:long "31.33333" ;
+	geo:lat_long "-6.4, 31.33333" ;
+	rdfs:label "Katavi" ;
+	owl:sameAs dbr:Katavi_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Shinyanga a schema:Place ;
+	geo:lat "-3.75" ;
+	geo:long "33" ;
+	geo:lat_long "-3.75, 33.0" ;
+	rdfs:label "Shinyanga" ;
+	owl:sameAs dbr:Shinyanga ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Ruvuma a schema:Place ;
+	geo:lat "-11" ;
+	geo:long "36" ;
+	geo:lat_long "-11.0, 36.0" ;
+	rdfs:label "Ruvuma" ;
+	owl:sameAs dbr:Ruvuma_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Rukwa a schema:Place ;
+	geo:lat "-7.9" ;
+	geo:long "31.33333" ;
+	geo:lat_long "-7.9, 31.33333" ;
+	rdfs:label "Rukwa" ;
+	owl:sameAs dbr:Rukwa_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Mara a schema:Place ;
+	geo:lat "-1.75" ;
+	geo:long "34" ;
+	geo:lat_long "-1.75, 34.0" ;
+	rdfs:label "Mara" ;
+	owl:sameAs dbr:Mara_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Singida a schema:Place ;
+	geo:lat "-5.5" ;
+	geo:long "34.5" ;
+	geo:lat_long "-5.5, 34.5" ;
+	rdfs:label "Singida" ;
+	owl:sameAs dbr:Singida_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Dodoma a schema:Place ;
+	geo:lat "-6" ;
+	geo:long "36" ;
+	geo:lat_long "-6.0, 36.0" ;
+	rdfs:label "Dodoma" ;
+	owl:sameAs dbr:Dodoma ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Lindi a schema:Place ;
+	geo:lat "-9.5" ;
+	geo:long "38.5" ;
+	geo:lat_long "-9.5, 38.5" ;
+	rdfs:label "Lindi" ;
+	owl:sameAs dbr:Lindi ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Kigoma a schema:Place ;
+	geo:lat "-4.75" ;
+	geo:long "30.5" ;
+	geo:lat_long "-4.75, 30.5" ;
+	rdfs:label "Kigoma" ;
+	owl:sameAs dbr:Category:Kigoma_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Manyara a schema:Place ;
+	geo:lat "-4.75" ;
+	geo:long "36.66667" ;
+	geo:lat_long "-4.75, 36.66667" ;
+	rdfs:label "Manyara" ;
+	owl:sameAs dbr:Manyara_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Mtwara a schema:Place ;
+	geo:lat "-10.66667" ;
+	geo:long "39" ;
+	geo:lat_long "-10.66667, 39.0" ;
+	rdfs:label "Mtwara" ;
+	owl:sameAs dbr:Mtwara ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Tabora a schema:Place ;
+	geo:lat "-5.5" ;
+	geo:long "32.83333" ;
+	geo:lat_long "-5.5, 32.83333" ;
+	rdfs:label "Tabora" ;
+	owl:sameAs dbr:Tabora_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .
+
+dsg:Simiyu a schema:Place ;
+	geo:lat "-2.95" ;
+	geo:long "34.2" ;
+	geo:lat_long "-2.95, 34.2" ;
+	rdfs:label "Simiyu" ;
+	owl:sameAs dbr:Category:Simiyu_Region ;
+	dct:creator "Deo Shao" ;
+	dct:title "Region Registry" ;
+	dcat:distribution "Region.ttl" ;
+	dct:issued "2018-09-15T00:00:00"^^xsd:dateTime ;
+	dct:publisher "TOGD Research Group" ;
+	prov:wasDerivedFrom "http://www.opendata.or.tz" .

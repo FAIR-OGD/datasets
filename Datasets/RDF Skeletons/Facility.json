@@ -1,0 +1,283 @@
+[
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Facilty Data RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.civiclab.or.tz/togd/dataset/health/",
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "void",
+          "uri": "http://rdfs.org/ns/void#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "ds",
+          "uri": "http://www.civiclab.or.tz/togd/dataset/"
+        },
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "dct",
+          "uri": "http://purl.org/dc/terms/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "dbr",
+          "uri": "http://dbpedia.org/resource/"
+        },
+        {
+          "name": "prop",
+          "uri": "http://vocab.opendatadom.or.tz/prop/prop.owl#"
+        },
+        {
+          "name": "dsh",
+          "uri": "http://www.civiclab.or.tz/togd/dataset/health/"
+        },
+        {
+          "name": "dcat",
+          "uri": "http://www.w3.org/ns/dcat#"
+        },
+        {
+          "name": "prov",
+          "uri": "http://www.w3.org/ns/prov#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "'http://www.civiclab.or.tz/togd/dataset/health/'+value.urlify()",
+          "isRowNumberCell": false,
+          "columnName": "Facility",
+          "rdfTypes": [
+            {
+              "uri": "http://dbpedia.org/ontology/Hospital",
+              "curie": "dbo:Hospital"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://vocab.opendatadom.or.tz/prop/prop.owl#facility_regno",
+              "curie": "prop:facility_regno",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "RegNo"
+              }
+            },
+            {
+              "uri": "http://vocab.opendatadom.or.tz/prop/prop.owl#facility_name",
+              "curie": "prop:facility_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Facility"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+              "curie": "geo:lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                "columnName": "Latitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+              "curie": "geo:long",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://vocab.opendatadom.or.tz/prop/prop.owl#facility_status",
+              "curie": "prop:facility_status",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "lang": "en",
+                "columnName": "Status"
+              }
+            },
+            {
+              "uri": "http://vocab.opendatadom.or.tz/prop/prop.owl#facility_ownership",
+              "curie": "prop:facility_ownership",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "lang": "en",
+                "columnName": "Ownership"
+              }
+            },
+            {
+              "uri": "http://vocab.opendatadom.or.tz/prop/prop.owl#facilityType",
+              "curie": "prop:facilityType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "lang": "en",
+                "columnName": "FaciltyType"
+              }
+            },
+            {
+              "uri": "http://vocab.opendatadom.or.tz/prop/prop.owl#council_name",
+              "curie": "prop:council_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Council"
+              }
+            },
+            {
+              "uri": "http://schema.org/Place",
+              "curie": "schema:Place",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "'http://www.civiclab.or.tz/togd/dataset/health/'+value.urlify()",
+                "isRowNumberCell": false,
+                "columnName": "Region",
+                "rdfTypes": [],
+                "links": [
+                  {
+                    "uri": "http://vocab.opendatadom.or.tz/prop/prop.owl#region_name",
+                    "curie": "prop:region_name",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "Region"
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/2002/07/owl#sameAs",
+                    "curie": "owl:sameAs",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "Region_URI",
+                      "rdfTypes": [],
+                      "links": []
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/creator",
+              "curie": "dct:creator",
+              "target": {
+                "nodeType": "literal",
+                "value": "Deo Shao"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/title",
+              "curie": "dct:title",
+              "target": {
+                "nodeType": "literal",
+                "value": "Operating Health Facilities"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/description",
+              "curie": "dct:description",
+              "target": {
+                "nodeType": "literal",
+                "value": "Operating health facilities in Tanzania by 2014"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#comment",
+              "curie": "rdfs:comment",
+              "target": {
+                "nodeType": "literal",
+                "value": "Operating health facilities in Tanzania by location"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/ns/dcat#issued",
+              "curie": "dcat:issued",
+              "target": {
+                "nodeType": "literal",
+                "value": "2018-09-15T00:00:00",
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/ns/dcat#distribution",
+              "curie": "dcat:distribution",
+              "target": {
+                "nodeType": "literal",
+                "value": "HealthFacilities.ttl"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/publisher",
+              "curie": "dct:publisher",
+              "target": {
+                "nodeType": "literal",
+                "value": "TOGD Research Working Group"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/ns/prov#wasDerivedFrom",
+              "curie": "prov:wasDerivedFrom",
+              "target": {
+                "nodeType": "literal",
+                "value": "http://www.opendata.go.tz"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  }
+]

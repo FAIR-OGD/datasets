@@ -1,0 +1,180 @@
+[
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Region Data RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://civiclab.or.tz/togd/dataset/geodata/",
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "dct",
+          "uri": "http://purl.org/dc/terms/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "dbr",
+          "uri": "http://dbpedia.org/resource/"
+        },
+        {
+          "name": "prop",
+          "uri": "http://vocab.opendatadom.or.tz/prop/prop.owl#"
+        },
+        {
+          "name": "dsg",
+          "uri": "http://civiclab.or.tz/togd/dataset/geodata/"
+        },
+        {
+          "name": "dcat",
+          "uri": "http://www.w3.org/ns/dcat#"
+        },
+        {
+          "name": "prov",
+          "uri": "http://www.w3.org/ns/prov#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Region",
+          "rdfTypes": [
+            {
+              "uri": "http://schema.org/Place",
+              "curie": "schema:Place"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+              "curie": "geo:lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Latitute"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+              "curie": "geo:long",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long",
+              "curie": "geo:lat_long",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Location"
+              }
+            },
+            {
+              "uri": "http://vocab.opendatadom.or.tz/prop/prop.owl#region_name",
+              "curie": "prop:region_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Region"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Region_URI",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/creator",
+              "curie": "dct:creator",
+              "target": {
+                "nodeType": "literal",
+                "value": "Deo Shao"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/title",
+              "curie": "dct:title",
+              "target": {
+                "nodeType": "literal",
+                "value": "Region Registry"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/ns/dcat#distribution",
+              "curie": "dcat:distribution",
+              "target": {
+                "nodeType": "literal",
+                "value": "Region.ttl"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/issued",
+              "curie": "dct:issued",
+              "target": {
+                "nodeType": "literal",
+                "value": "2018-09-15T00:00:00",
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/publisher",
+              "curie": "dct:publisher",
+              "target": {
+                "nodeType": "literal",
+                "value": "TOGD Research Group"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/ns/prov#wasDerivedFrom",
+              "curie": "prov:wasDerivedFrom",
+              "target": {
+                "nodeType": "literal",
+                "value": "http://www.opendata.or.tz"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,598 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://vocab.opendatadom.or.tz/prop#"
+     xml:base="http://vocab.opendatadom.or.tz/prop"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://vocab.opendatadom.or.tz/prop"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#hasService -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.opendatadom.or.tz/prop#hasService">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.opendatadom.or.tz/prop#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#Service"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.opendatadom.or.tz/prop#hasService"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#Place"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#isLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.opendatadom.or.tz/prop#isLocatedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.opendatadom.or.tz/prop#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#Region"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.opendatadom.or.tz/prop#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#Place"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.opendatadom.or.tz/prop#isPartOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.opendatadom.or.tz/prop#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#Zone"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.opendatadom.or.tz/prop#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#Place"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#isTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.opendatadom.or.tz/prop#isTypeOf">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.opendatadom.or.tz/prop#isTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#Service"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.opendatadom.or.tz/prop#isTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#Service"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#Population -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.opendatadom.or.tz/prop#Population">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#Place"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Population of the particular place</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#average_mark -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.opendatadom.or.tz/prop#average_mark">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#School"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Average mark</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#council_name -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.opendatadom.or.tz/prop#council_name">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#Council"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#country_name -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.opendatadom.or.tz/prop#country_name">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#Country"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#data_year -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.opendatadom.or.tz/prop#data_year">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#School"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Year of the statistical data</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#district_name -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.opendatadom.or.tz/prop#district_name">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#District"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#facility_name -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.opendatadom.or.tz/prop#facility_name">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#Facility"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Name of the health facility</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#facility_ownership -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.opendatadom.or.tz/prop#facility_ownership">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#Facility"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ownership of the facility</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#facility_regno -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.opendatadom.or.tz/prop#facility_regno">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#Facility"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Registration number of the facility</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#facility_status -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.opendatadom.or.tz/prop#facility_status">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#Facility"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Facility status</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#faciltyType -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.opendatadom.or.tz/prop#faciltyType">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#Facility"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of the health facility</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#latitude -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.opendatadom.or.tz/prop#latitude">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#Place"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latitude parameter</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#longitude -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.opendatadom.or.tz/prop#longitude">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#Place"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Longitude parameter</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#pass_change -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.opendatadom.or.tz/prop#pass_change">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#School"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#pass_rate -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.opendatadom.or.tz/prop#pass_rate">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#School"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pass rate of the school</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#region_name -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.opendatadom.or.tz/prop#region_name">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#Region"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#school_name -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.opendatadom.or.tz/prop#school_name">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#School"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Name of the school</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#school_rank -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.opendatadom.or.tz/prop#school_rank">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#School"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rank of the school in a certain year</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#school_regno -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.opendatadom.or.tz/prop#school_regno">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#School"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">School registration number</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#teacher_ratio -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.opendatadom.or.tz/prop#teacher_ratio">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#School"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Student to teacher ratio</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#ward -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.opendatadom.or.tz/prop#ward">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#District"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ward name of the geo location</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#zone_name -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.opendatadom.or.tz/prop#zone_name">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.opendatadom.or.tz/prop#Zone"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#Council -->
+
+    <owl:Class rdf:about="http://vocab.opendatadom.or.tz/prop#Council">
+        <rdfs:subClassOf rdf:resource="http://vocab.opendatadom.or.tz/prop#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#Country -->
+
+    <owl:Class rdf:about="http://vocab.opendatadom.or.tz/prop#Country">
+        <rdfs:subClassOf rdf:resource="http://vocab.opendatadom.or.tz/prop#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#District -->
+
+    <owl:Class rdf:about="http://vocab.opendatadom.or.tz/prop#District">
+        <rdfs:subClassOf rdf:resource="http://vocab.opendatadom.or.tz/prop#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#Education -->
+
+    <owl:Class rdf:about="http://vocab.opendatadom.or.tz/prop#Education">
+        <rdfs:subClassOf rdf:resource="http://vocab.opendatadom.or.tz/prop#PublicService"/>
+        <owl:disjointWith rdf:resource="http://vocab.opendatadom.or.tz/prop#Health"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#Facility -->
+
+    <owl:Class rdf:about="http://vocab.opendatadom.or.tz/prop#Facility">
+        <rdfs:subClassOf rdf:resource="http://vocab.opendatadom.or.tz/prop#Health"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#Health -->
+
+    <owl:Class rdf:about="http://vocab.opendatadom.or.tz/prop#Health">
+        <rdfs:subClassOf rdf:resource="http://vocab.opendatadom.or.tz/prop#PublicService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#Place -->
+
+    <owl:Class rdf:about="http://vocab.opendatadom.or.tz/prop#Place">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geographical location</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#PrivateService -->
+
+    <owl:Class rdf:about="http://vocab.opendatadom.or.tz/prop#PrivateService">
+        <rdfs:subClassOf rdf:resource="http://vocab.opendatadom.or.tz/prop#Service"/>
+        <owl:disjointWith rdf:resource="http://vocab.opendatadom.or.tz/prop#PublicService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#PublicService -->
+
+    <owl:Class rdf:about="http://vocab.opendatadom.or.tz/prop#PublicService">
+        <rdfs:subClassOf rdf:resource="http://vocab.opendatadom.or.tz/prop#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#Region -->
+
+    <owl:Class rdf:about="http://vocab.opendatadom.or.tz/prop#Region">
+        <rdfs:subClassOf rdf:resource="http://vocab.opendatadom.or.tz/prop#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#School -->
+
+    <owl:Class rdf:about="http://vocab.opendatadom.or.tz/prop#School">
+        <rdfs:subClassOf rdf:resource="http://vocab.opendatadom.or.tz/prop#Education"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#Service -->
+
+    <owl:Class rdf:about="http://vocab.opendatadom.or.tz/prop#Service">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Services available</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.opendatadom.or.tz/prop#Zone -->
+
+    <owl:Class rdf:about="http://vocab.opendatadom.or.tz/prop#Zone">
+        <rdfs:subClassOf rdf:resource="http://vocab.opendatadom.or.tz/prop#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontology for Open Government Datasets</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://vocab.opendatadom.or.tz/prop#Council"/>
+            <rdf:Description rdf:about="http://vocab.opendatadom.or.tz/prop#District"/>
+            <rdf:Description rdf:about="http://vocab.opendatadom.or.tz/prop#Region"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://vocab.opendatadom.or.tz/prop#Country"/>
+            <rdf:Description rdf:about="http://vocab.opendatadom.or.tz/prop#Region"/>
+            <rdf:Description rdf:about="http://vocab.opendatadom.or.tz/prop#Zone"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

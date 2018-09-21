@@ -1,0 +1,40 @@
+PREFIX 	schema: <http://schema.org/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX prop: <http://vocab.opendatadom.or.tz/prop/prop.owl#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?facility_name 
+                ?lat ?long ?region_name 
+                ?facility_type ?facility_ownership ?facility_status ?source 
+                ?issued ?publisher ?otherdataset
+FROM <http://civiclab.or.tz/togd/dataset/facility#>
+FROM <http://civiclab.or.tz/togd/dataset/region#>
+WHERE 
+{
+    
+          {
+		?l prop:facility_name ?facility_name .
+                ?l geo:lat ?lat .
+                ?l geo:long ?long .
+                ?l prop:facilityType ?facility_type .
+                ?l prop:facility_ownership ?facility_ownership .
+                ?l prop:facility_status ?facility_status .
+                ?l schema:Place ?region .
+ 		?region prop:region_name ?region_name .
+                ?region owl:sameAs ?otherdataset .
+                ?l prov:wasDerivedFrom ?source .
+                ?l dcat:issued ?issued .
+                ?l dct:publisher ?publisher .
+          }
+
+}
+ORDER BY DESC (?region_name)
+LIMIT 1

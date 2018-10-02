@@ -1,0 +1,29 @@
+PREFIX 	schema: <http://schema.org/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT DISTINCT ?label ?lat ?long ?region
+WHERE 
+{
+  { 
+    GRAPH <http://civiclab.or.tz/togd/dataset/health#>
+          {
+		?l rdfs:label ?label .
+                ?l geo:lat ?lat .
+                ?l geo:long ?long .
+                ?l schema:Place ?region .
+        	?region rdfs:label "Dodoma" .
+            
+          }
+  }
+}
+ORDER BY DESC (?label)
+LIMIT 20
